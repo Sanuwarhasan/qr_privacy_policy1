@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — com.ssragency.qrstudio.vxkmpr (QR Studio)</title>
+  <style>
+    :root {
+      --bg: #f8fafd;
+      --surface: #ffffff;
+      --surface-variant: #eff3f8;
+      --border: #dce2ec;
+      --text-primary: #1f1f1f;
+      --text-secondary: #5f6368;
+      --accent: #1a73e8;
+      --accent-soft: #d3e3fd;
+      --accent-on: #041e49;
+      --emerald-soft: #c4eed0;
+      --emerald-on: #072711;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0e1116;
+        --surface: #161b22;
+        --surface-variant: #1f2631;
+        --border: #2d3646;
+        --text-primary: #e8eaed;
+        --text-secondary: #9aa0a6;
+        --accent: #8ab4f8;
+        --accent-soft: #0842a0;
+        --accent-on: #d3e3fd;
+        --emerald-soft: #0f5132;
+        --emerald-on: #c4eed0;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.65;
+      padding: 32px 16px 64px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-on);
+      letter-spacing: 0.02em;
+    }
+
+    .pill.emerald {
+      background: var(--emerald-soft);
+      color: var(--emerald-on);
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .summary-banner {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: var(--surface-variant);
+      border: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px 28px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: var(--text-primary);
+    }
+
+    p {
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+      font-size: 0.96rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--text-secondary);
+      font-size: 0.96rem;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: var(--text-primary);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.88em;
+      background: var(--surface-variant);
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: var(--text-primary);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      margin-top: 28px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="pill-row">
+        <span class="pill emerald">100% On-Device Processing</span>
+        <span class="pill">No Ads • No Tracking</span>
+      </div>
+      <h1>Privacy Policy — QR Studio</h1>
+      <p class="subtitle">App ID: <code>com.ssragency.qrstudio.vxkmpr</code> &bull; Effective Date: November 24, 2026</p>
+      <div class="summary-banner">
+        <strong>In short:</strong> QR Studio scans and generates QR codes and barcodes entirely on your device. We do not collect, transmit, sell, or share your personal information, camera feed, photos, or scan history.
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>1. Information We Do Not Collect</h2>
+      <p>QR Studio is designed to work completely offline without user accounts or cloud servers. We do not collect or store:</p>
+      <ul>
+        <li>Camera video frames, images, or biometric data</li>
+        <li>Scanned or generated QR code contents (URLs, Wi-Fi passwords, contacts, or text)</li>
+        <li>Device identifiers, advertising IDs, precise location, or usage analytics</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>2. Permissions &amp; How They Are Used</h2>
+      <ul>
+        <li><strong>Camera (<code>android.permission.CAMERA</code>):</strong> Used strictly to detect QR codes and barcodes in real time via on-device CameraX and Google ML Kit Barcode Scanning. Camera frames are processed transiently in memory and are never recorded or uploaded.</li>
+        <li><strong>Photo Selection (Android Photo Picker):</strong> When you choose to scan a QR code from an image, QR Studio uses the zero-permission Android Photo Picker so the app only reads the single image you explicitly select. QR Studio does not request broad storage or media library permissions.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Local Data Storage</h2>
+      <p>Your scanned and created QR code history (along with starred items) is stored exclusively on your device in a local SQLite database (Room).</p>
+      <ul>
+        <li>You can delete any individual entry or clear unstarred history directly inside the History tab.</li>
+        <li>Uninstalling QR Studio permanently deletes all locally stored history from your device.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>4. Third-Party Links &amp; Actions</h2>
+      <p>When you choose to open a scanned website, connect to Wi-Fi settings, dial a phone number, send an email or SMS, add a contact, or share a generated QR PNG image, Android hands that action off to the app or system panel you select. Those external apps and websites are governed by their own privacy policies.</p>
+    </section>
+
+    <section class="card">
+      <h2>5. Children&rsquo;s Privacy</h2>
+      <p>QR Studio does not knowingly collect any personal information from anyone, including children under the age of 13.</p>
+    </section>
+
+    <section class="card">
+      <h2>6. Changes &amp; Contact</h2>
+      <p>If we update this Privacy Policy in future versions of QR Studio, the updated version will be included directly inside the app and posted with a revised effective date.</p>
+      <p>If you have questions about this Privacy Policy, please contact the developer at <a href="mailto:support@qrstudio.app">support@qrstudio.app</a>.</p>
+    </section>
+
+    <footer>
+      QR Studio &bull; Built for private, on-device scanning
+    </footer>
+  </main>
+</body>
+</html>
